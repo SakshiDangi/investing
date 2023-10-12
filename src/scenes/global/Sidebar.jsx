@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { ProSidebarProvider, Menu, MenuItem } from "react-pro-sidebar";
+import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
-// import "react-pro-sidebar/dist/css/styles.css";
+import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -24,7 +24,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     <MenuItem
       active={selected === title}
       style={{
-        color: colors.grey[200],
+        color: colors.grey[100],
       }}
       onClick={() => setSelected(title)}
       icon={icon}
@@ -45,7 +45,7 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[600]} !important`,
+          background: `${colors.primary[400]} !important`,
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -61,7 +61,7 @@ const Sidebar = () => {
         },
       }}
     >
-      <ProSidebarProvider collapsed={isCollapsed}>
+      <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
           <MenuItem
@@ -107,10 +107,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Investing
+                  SP Dangi
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  SP Admin
+                  Admin
                 </Typography>
               </Box>
             </Box>
@@ -159,7 +159,7 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Pages
+              Details
             </Typography>
             <Item
               title="Profile Form"
@@ -220,7 +220,7 @@ const Sidebar = () => {
             />
           </Box>
         </Menu>
-      </ProSidebarProvider>
+      </ProSidebar>
     </Box>
   );
 };
