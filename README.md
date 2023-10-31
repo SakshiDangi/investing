@@ -1,3 +1,9 @@
+Welcome to Investing, your go-to web application for simplifying the world of investments and financial planning. With our powerful toolkit, we empower you to make informed investment decisions, track your portfolio's performance. Built with cutting-edge technologies such as React, Nivo charts, Yup, Formik, and React Router, Investing Make combines intuitive user interfaces with robust data visualization, security, and routing capabilities.
+React: Our application's frontend is powered by React, a renowned JavaScript library for building dynamic, responsive user interfaces. This ensures a seamless and interactive user experience, making investment management a breeze.
+Nivo Charts: Visualize your investment portfolio's performance with stunning and informative charts, courtesy of Nivo charts. Gain valuable insights at a glance and make data-driven decisions.
+Yup: With Yup, we ensure that the data you input is validated and accurate. Say goodbye to errors and hello to confidence in your financial choices.
+Formik: Our seamless data handling is powered by Formik, making it easy to manage and submit forms, while providing an efficient and user-friendly experience.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
